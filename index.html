@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    *{
+        background-color: #424242;
+    }
+form{
+   margin-top: 80px;
+   margin-left: 490px;
+}
+input{
+    color:white;
+    display: block;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    width: 310px;
+    font-size: large;
+}
+input:focus{
+    outline: none;
+    border-color: rgb(32, 80, 255);
+}
+textarea{
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    color: white;
+}
+textarea:focus{
+    outline: none;
+    border-color: rgb(32, 80, 255);
+}
+form .text label {
+    font-size: 18px;
+    color: #979595 ;
+    font-weight: 600;
+    margin-left: 3px;
+}
+.text label:hover{
+    color: rgb(32, 80, 255);
+}
+form .text{
+    margin: 40px;
+}
+.btn{
+    margin-left: 100px;
+}
+</style>
+<body>
+    
+   
+    <form action="">
+
+        <div class="text">
+            <label for="name">Name</label>
+            <br>
+            <input id="name" type="text" required="">
+        </div>
+        
+        <div class="text">
+            <label for="email">Email</label>
+            <br>
+            <input id="email" type="text" required="">
+        </div>
+
+        <div class="text">
+            <label for="password">Password</label>
+            <br>
+            <input id="password" type="text" required="">
+        </div>
+
+        <div class="text">
+            <label for="number">Number</label>
+            <br>
+            <input id="number" type="text" required="">
+        </div>
+
+          <div class="text">
+            <label for="message">Message</label>
+            <br>
+            <textarea id="message" cols="40" rows="5"></textarea>
+          </div>
+
+          <div class="btn">
+            <button style=" cursor: pointer; background-color: rgb(32, 80, 255); color: white; border-radius: 5px; padding: 5px; width: 100px; height: 30px; border: none;">SUBMIT</button>
+            <button type="reset" style=" cursor: pointer; background-color: white; color: black;  border-radius: 5px; padding: 5px; width: 100px; height: 30px; border: none;">CANCEL</button>
+         </div>
+ 
+  </form>
+
+
+         
+          
+</body>
+</html>
