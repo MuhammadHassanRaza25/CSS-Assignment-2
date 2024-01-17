@@ -8,6 +8,7 @@
 <style>
     *{
         background-color: #424242;
+        font-family: sans-serif;
     }
 form{
    margin-top: 80px;
@@ -15,12 +16,17 @@ form{
 }
 input{
     color:white;
+    border-color: rgb(216, 211, 211);
     display: block;
     border-left: none;
     border-top: none;
     border-right: none;
     width: 310px;
     font-size: large;
+    padding-bottom: 5px;
+    transition: all 0.5s;
+    transition: normal;
+    transition-duration: 0.5s;
 }
 input:focus{
     outline: none;
@@ -31,70 +37,60 @@ textarea{
     border-top: none;
     border-right: none;
     color: white;
+    font-size: 18px;
+    border-color: rgb(216, 211, 211);
 }
 textarea:focus{
     outline: none;
     border-color: rgb(32, 80, 255);
 }
-form .text label {
-    font-size: 18px;
-    color: #979595 ;
-    font-weight: 600;
-    margin-left: 3px;
-}
-.text label:hover{
-    color: rgb(32, 80, 255);
-}
 form .text{
     margin: 40px;
 }
 .btn{
-    margin-left: 100px;
+    margin-left: 99px;
 }
  #b:hover{
-     background-color:rgb(50, 95, 255) !important;
+     background-color:rgb(104, 212, 255) !important;
 }
 button:hover{
-    transform: scale(1.04);
+    transform: scale(1.03);
 }
+
+
 </style>
 <body>
-    
+
+        
            <form action="">
 
         <div class="text">
-            <label for="name">Name</label>
-             <br>
-            <input required id="name" type="text">
+          
+            <input required placeholder="Name" type="text">
         </div>
         
         <div class="text">
-            <label for="email">Email</label>
-              <br>
-            <input id="email" type="text">
+           
+            <input placeholder="Email" type="email">
         </div>
 
         <div class="text">
-            <label for="password">Password</label>
-              <br>
-            <input id="password" type="password" >
+            <input placeholder="Password" type="password" >
         </div>
 
         <div class="text">
-            <label for="number">Number</label>
-              <br>
-            <input id="number" type="number" >
+            
+            <input placeholder="Number" type="number" >
         </div>
 
           <div class="text">
-            <label for="message">Message</label>
-                <br>
-            <textarea id="message" cols="40" rows="5"></textarea>
+          
+            <textarea placeholder="Message" cols="33" rows="5"></textarea>
           </div>
 
           <div class="btn">
             <button id="b" style=" cursor: pointer; background-color: rgb(32, 80, 255); color: white; border-radius: 5px; padding: 5px; width: 100px; height: 30px; border: none;">SUBMIT</button>
-            <button type="reset" style=" cursor: pointer; background-color: white; color: black;  border-radius: 5px; padding: 5px; width: 100px; height: 30px; border: none;">CANCEL</button>
+            <button type="reset" style=" cursor: pointer; background-color: white; color: black;  border-radius: 5px; padding: 5px; width: 100px; height: 30px; border: none; margin-left: 4px;">CANCEL</button>
          </div>
  
   </form> 
