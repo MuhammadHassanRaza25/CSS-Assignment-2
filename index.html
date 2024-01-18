@@ -10,16 +10,10 @@
         background-color: #424242;
         font-family: sans-serif;
     }
+   
 form{
    margin-top: 80px;
-   margin-left: 490px;
-}
-input:focus::placeholder{
-    color:rgb(32, 80, 255) ;
-
-}
-input{
-    color: blue;
+   margin-left:470px;
 }
 input{
     color:white;
@@ -35,10 +29,16 @@ input{
     transition: normal;
     transition-duration: 0.5s;
 }
+input::placeholder{
+    color: white;
+}
 input:focus{
     outline: none;
-    border-color: rgb(32, 80, 255);
+    border-color: aqua;
     padding-left: 8px;
+}
+input:focus::placeholder{
+    color:aqua ;
 }
 textarea{
     border-left: none;
@@ -51,14 +51,17 @@ textarea{
     transition: normal;
     transition-duration: 0.5s;
 }
+textarea::placeholder{
+    color: white;
+}
 textarea:focus{
     outline: none;
-    border-color: rgb(32, 80, 255);
+    border-color:aqua;
     padding-left: 8px;
 }
 
 textarea:focus::placeholder{
-    color: rgb(32, 80, 255);
+    color: aqua;
 }
 form .text{
     margin: 50px;
@@ -67,12 +70,18 @@ form .text{
     margin-left: 99px;
 }
  #b:hover{
-     background-color:rgb(104, 212, 255) !important;
+     background-color:aqua !important;
+     color: #424242 !important;
 }
-button:hover{
-    transform: scale(1.03);
+#bt:hover{
+      background-color: rgb(32, 80, 255) !important;
+      color: white !important;
 }
-
+.btn button{
+    transition: all 0.5s;
+    transition: normal;
+    transition-duration: 0.5s;
+}
 
 </style>
 <body>
@@ -106,7 +115,7 @@ button:hover{
 
           <div class="btn">
             <button id="b" style=" cursor: pointer; background-color: rgb(32, 80, 255); color: white; border-radius: 5px; padding: 5px; width: 100px; height: 30px; border: none;">SUBMIT</button>
-            <button type="reset" style=" cursor: pointer; background-color: white; color: black;  border-radius: 5px; padding: 5px; width: 100px; height: 30px; border: none; margin-left: 4px;">CANCEL</button>
+            <button id="bt" type="reset" style=" cursor: pointer; background-color: white; color: black;  border-radius: 5px; padding: 5px; width: 100px; height: 30px; border: none; margin-left: 4px;">CANCEL</button>
          </div>
  
   </form> 
